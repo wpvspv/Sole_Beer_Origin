@@ -1,0 +1,1937 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--주석 : 술 저장고 : 술 리스트 스크롤 뷰-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--주석 : 술 종류  설명 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/stella" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:text="이름" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="도수" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="출시년도" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="생산국"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:id="@+id/tx001-0" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx001-1" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx001-2" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx001-3"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="3dp" android:background="#000000"></LinearLayout> <!--주석 : 술 종류  설명 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/guinness" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:text="이름" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="도수" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="출시년도" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="생산국"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:id="@+id/tx002-0" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx002-1" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx002-2" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx002-3"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="3dp" android:background="#000000"></LinearLayout> <!--주석 : 술 종류  설명 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/duvel" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:text="이름" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="도수" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="출시년도" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="생산국"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:id="@+id/tx003-0" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx003-1" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx003-2" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx003-3"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="3dp" android:background="#000000"></LinearLayout> <!--주석 : 술 종류  설명 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/leffe" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:text="이름" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="도수" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="출시년도" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="생산국"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:id="@+id/tx004-0" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx004-1" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx004-2" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx004-3"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="3dp" android:background="#000000"></LinearLayout> <!--주석 : 술 종류  설명 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/monteith" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:text="이름" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="도수" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="출시년도" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="생산국"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:id="@+id/tx005-0" android:background="@drawable/bottom_black"
+                    android:textAlignment="center"
+                    android:textSize="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx005-1" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx005-2" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx005-3"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="3dp" android:background="#000000"></LinearLayout> <!--주석 : 술 종류  설명 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/harry" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:text="이름" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="도수" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="출시년도" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="생산국"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:id="@+id/tx006-0" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx006-1" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx006-2" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx006-3"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="3dp" android:background="#000000"></LinearLayout> <!--주석 : 술 종류  설명 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/super_bock" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:text="이름" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="도수" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="출시년도" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="생산국"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:id="@+id/tx007-0" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx007-1" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx007-2" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx007-3"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="3dp" android:background="#000000"></LinearLayout> <!--주석 : 술 종류  설명 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/faxe" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:text="이름" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="도수" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="출시년도" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="생산국"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:id="@+id/tx008-0" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx008-1" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx008-2" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx008-3"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="3dp" android:background="#000000"></LinearLayout> <!--주석 : 술 종류  설명 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/paulaner" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:text="이름" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="도수" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="출시년도" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="생산국"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:id="@+id/tx009-0" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx009-1" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx009-2" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx009-3"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="3dp" android:background="#000000"></LinearLayout> <!--주석 : 술 종류  설명 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/weihen" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:text="이름" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="도수" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="출시년도" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="생산국"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:id="@+id/tx010-0" android:background="@drawable/bottom_black"
+                    android:textAlignment="center"
+                    android:textSize="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx010-1" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx010-2" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx010-3"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="3dp" android:background="#000000"></LinearLayout> <!--주석 : 술 종류  설명 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/krom" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:text="이름" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="도수" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="출시년도" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="생산국"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:id="@+id/tx011-0" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx011-1" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx011-2" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx011-3"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="3dp" android:background="#000000"></LinearLayout> <!--주석 : 술 종류  설명 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/hein" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:text="이름" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="도수" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="출시년도" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="생산국"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:id="@+id/tx013-0" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx013-1" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx013-2" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx013-3"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="3dp" android:background="#000000"></LinearLayout> <!--주석 : 술 종류  설명 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/zahringer" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:text="이름" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="도수" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="출시년도" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="생산국"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:id="@+id/tx012-0" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx012-1" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx012-2" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx012-3"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="3dp" android:background="#000000"></LinearLayout> <!--주석 : 술 종류  설명 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/kronen" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:text="이름" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="도수" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="출시년도" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="생산국"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:id="@+id/tx014-0" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx014-1" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx014-2" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx014-3"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="3dp" android:background="#000000"></LinearLayout> <!--주석 : 술 종류  설명 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/corona" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:text="이름" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="도수" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="출시년도" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="생산국"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:id="@+id/tx015-0" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx015-1" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx015-2" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx015-3"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="3dp" android:background="#000000"></LinearLayout> <!--주석 : 술 종류  설명 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/estrella" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:text="이름" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="도수" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="출시년도" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="생산국"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:id="@+id/tx016-0" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx016-1" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx016-2" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx016-3"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="3dp" android:background="#000000"></LinearLayout> <!--주석 : 술 종류  설명 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/efes" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:text="이름" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="도수" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="출시년도" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="생산국"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:id="@+id/tx017-0" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx017-1" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx017-2" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx017-3"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="3dp" android:background="#000000"></LinearLayout> <!--주석 : 술 종류  설명 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pilsner" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:text="이름" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="도수" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="출시년도" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="생산국"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:id="@+id/tx018-0" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx018-1" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx018-2" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx018-3"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="3dp" android:background="#000000"></LinearLayout> <!--주석 : 술 종류  설명 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/suntory" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:text="이름" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="도수" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="출시년도" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="생산국"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:id="@+id/tx019-0" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx019-1" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx019-2" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx019-3"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="3dp" android:background="#000000"></LinearLayout> <!--주석 : 술 종류  설명 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/back" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:text="이름" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="도수" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="출시년도" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="생산국"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:id="@+id/tx020-0" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx020-1" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx020-2" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx020-3"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="3dp" android:background="#000000"></LinearLayout> <!--주석 : 술 종류  설명 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/becks_dark" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:text="이름" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="도수" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="출시년도" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="생산국"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:id="@+id/tx021-0" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx021-1" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx021-2" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx021-3"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="3dp" android:background="#000000"></LinearLayout> <!--주석 : 술 종류  설명 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/dark_lager" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:text="이름" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="도수" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="출시년도" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="생산국"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:id="@+id/tx022-0" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx022-1" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx022-2" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx022-3"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="3dp" android:background="#000000"></LinearLayout> <!--주석 : 술 종류  설명 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/erdinger" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:text="이름" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="도수" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="출시년도" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="생산국"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:id="@+id/tx023-0" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx023-1" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx023-2" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx023-3"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="3dp" android:background="#000000"></LinearLayout> <!--주석 : 술 종류  설명 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/weihensatep" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:text="이름" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="도수" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="출시년도" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:text="생산국"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#000000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"  android:gravity="center"  android:layout_weight="2"
+                    android:id="@+id/tx024-0" android:background="@drawable/bottom_black"
+                    android:textAlignment="center"
+                    android:textSize="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx024-1" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx024-2" android:background="@drawable/bottom_black"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" android:layout_weight="1"
+                    android:id="@+id/tx024-3"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

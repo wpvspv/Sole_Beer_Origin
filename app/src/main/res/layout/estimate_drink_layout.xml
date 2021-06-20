@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/estimate_drink_fragment"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_v2"
+    android:orientation="vertical">
+    주석 : 술한잔 레이아웃
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        주석 : 술 추가 버튼
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/icon_additional_button"
+            android:layout_gravity="right"
+            android:id="@+id/ID_PopupBtn_drink"/>
+
+        주석 : 추가한 술 리스트 추가될 Layout
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            주석 : 술 이름,양 레이아웃
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="20dp"
+                android:src="@drawable/drink_nowdrink_list"
+                />
+            주석 : 첫번째 술 레이아웃
+            <LinearLayout
+                android:id="@+id/ID_First_Drink_Layout"
+                android:orientation="horizontal"
+                android:layout_width="300dp"
+                android:layout_height="20dp"
+                android:background="@drawable/drink_nowdrink_listdrink"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/ID_First_Drink_Name"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="첫번째 술 예정"
+                    android:textAlignment="viewEnd"
+                    android:textSize="12dp"
+                    android:textColor="#3c28d4"
+                    />
+                <TextView
+                    android:id="@+id/ID_First_Drink_Volume"
+                    android:layout_width="145dp"
+                    android:layout_height="match_parent"
+                    android:text="용량 선택 예정"
+                    android:textAlignment="viewEnd"
+                    android:textSize="12dp"
+                    />
+
+
+            </LinearLayout>
+            주석 : 두번째 술 레이아웃
+            <LinearLayout
+                android:id="@+id/ID_Second_Drink_Layout"
+
+                android:orientation="horizontal"
+                android:layout_width="300dp"
+                android:layout_height="20dp"
+                android:background="@drawable/drink_nowdrink_listdrink"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/ID_Second_Drink_Name"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="두번째 술 예정"
+                    android:textAlignment="viewEnd"
+                    android:textSize="12dp"
+                    android:textColor="#3c28d4"
+                    />
+                <TextView
+                    android:id="@+id/ID_Second_Drink_Volume"
+                    android:layout_width="145dp"
+                    android:layout_height="match_parent"
+                    android:text="용량 선택 예정"
+                    android:textAlignment="viewEnd"
+                    android:textSize="12dp"
+                    />
+
+
+            </LinearLayout>
+            주석 : 세번째 술 레이아웃
+            <LinearLayout
+                android:id="@+id/ID_Third_Drink_Layout"
+                android:orientation="horizontal"
+                android:layout_width="300dp"
+                android:layout_height="20dp"
+                android:background="@drawable/drink_nowdrink_listdrink"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/ID_Third_Drink_Name"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="세번째 술 선택 예정"
+                    android:textAlignment="viewEnd"
+                    android:textSize="12dp"
+                    android:textColor="#3c28d4"
+                    />
+                <TextView
+                    android:id="@+id/ID_Third_Drink_Volume"
+                    android:layout_width="145dp"
+                    android:layout_height="match_parent"
+                    android:text="용량 선택 예정"
+                    android:textAlignment="viewEnd"
+                    android:textSize="12dp"
+                    />
+
+
+            </LinearLayout>
+            주석 : 네번째 술 레이아웃
+            <LinearLayout
+                android:id="@+id/ID_Four_Drink_Layout"
+                android:orientation="horizontal"
+                android:layout_width="300dp"
+                android:layout_height="20dp"
+                android:background="@drawable/drink_nowdrink_listdrink"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/ID_Four_Drink_Name"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="네번째 술 선택 예정"
+                    android:textAlignment="viewEnd"
+                    android:textSize="12dp"
+                    android:textColor="#3c28d4"
+                    />
+                <TextView
+                    android:id="@+id/ID_Four_Drink_Volume"
+                    android:layout_width="145dp"
+                    android:layout_height="match_parent"
+                    android:text="용량 선택 예정"
+                    android:textAlignment="viewEnd"
+                    android:textSize="12dp"
+                    />
+
+
+            </LinearLayout>
+            주석 : 다섯번째 술 레이아웃
+            <LinearLayout
+                android:id="@+id/ID_Five_Drink_Layout"
+                android:orientation="horizontal"
+                android:layout_width="300dp"
+                android:layout_height="20dp"
+                android:background="@drawable/drink_nowdrink_listdrink"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/ID_Five_Drink_Name"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="다섯번째 술 선택 예정"
+                    android:textAlignment="viewEnd"
+                    android:textSize="12dp"
+                    android:textColor="#3c28d4"
+                    />
+                <TextView
+                    android:id="@+id/ID_Five_Drink_Volume"
+                    android:layout_width="145dp"
+                    android:layout_height="match_parent"
+                    android:text="용량 선택 예정"
+                    android:textAlignment="viewEnd"
+                    android:textSize="12dp"
+                    />
+
+
+            </LinearLayout>
+            주석 : 여섯번째 술 레이아웃
+            <LinearLayout
+                android:id="@+id/ID_Six_Drink_Layout"
+                android:orientation="horizontal"
+                android:layout_width="300dp"
+                android:layout_height="20dp"
+                android:background="@drawable/drink_nowdrink_listdrink"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/ID_Six_Drink_Name"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="여섯번째 술 선택 예정"
+                    android:textAlignment="viewEnd"
+                    android:textSize="12dp"
+                    android:textColor="#3c28d4"
+                    />
+                <TextView
+                    android:id="@+id/ID_Six_Drink_Volume"
+                    android:layout_width="145dp"
+                    android:layout_height="match_parent"
+                    android:text="용량 선택 예정"
+                    android:textAlignment="viewEnd"
+                    android:textSize="12dp"
+                    />
+
+
+            </LinearLayout>
+
+            주석 : 술 초기화 버튼
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="초기화"
+                android:textSize="12dp"
+                android:textColor="#FF6F61"
+                android:background="@drawable/button_backgroud"
+                android:layout_gravity="right"
+                android:id="@+id/ID_Popup_RefreshButton"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        주석 : 사진 찍기
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000">
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000">
+                </LinearLayout>
+                <ImageButton
+                    android:id="@+id/ID_btn_Camera"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="사진 찍기"
+                    android:background="@drawable/icon_camera"
+                    android:scaleType="centerInside"
+                    />
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000">
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000">
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        주석 : 카카오 공유
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000">
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000">
+                </LinearLayout>
+                <ImageButton
+                    android:background="@drawable/kakao_icon"
+                    android:id="@+id/ID_kakaorink"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="centerInside"
+                    />
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000">
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000">
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000">
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    주석 : 캘린더 확인
+    <ImageButton
+        android:src="@drawable/icon_folder"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/btn_album"
+        android:scaleType="fitXY"
+        android:visibility="gone"/>
+
+    주석 : 저장 버튼
+    <Button
+        android:id="@+id/Save_Button"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textColor="#FF6F61"
+        android:background="@drawable/button_backgroud"
+        android:text="저장"/>
+</LinearLayout>

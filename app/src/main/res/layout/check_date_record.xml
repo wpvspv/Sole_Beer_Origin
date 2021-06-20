@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mcv_selectionColor="#a9dbf0cb"
+        app:mcv_showOtherDates="defaults"
+        android:background="@drawable/background_v2"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <LinearLayout
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/totaldate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="일 통계"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/sojudate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="소주"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/beerdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="맥주"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/liquordate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="양주"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/makgullidate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="막걸리"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/winedate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="와인"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/coktaildate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="칵테일"
+                    android:visibility="invisible"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dateml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/date"
+                android:layout_toRightOf="@+id/date"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"/>
+                <TextView
+                    android:id="@+id/sojudateml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ml"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/beerdateml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="cc"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/liquordateml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ml"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/makgullidateml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ml"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/winedateml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ml"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/coktaildateml"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ml"
+                    android:visibility="invisible"/>
+                <TextView
+                    android:id="@+id/masim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/dateml"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@+id/dateml"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/totalmonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="월 통계" />
+
+                <TextView
+                    android:id="@+id/monthml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

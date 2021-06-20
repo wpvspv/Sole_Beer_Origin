@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item android:title="주요 기능">
+
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Estimate_Drink_Menu_Button"
+            android:icon="@drawable/icon_menu_drink"
+            android:title="음주 기록" />
+        <item
+            android:id="@+id/Estimate_Blood_Menu_Button"
+            android:icon="@drawable/icon_menu_blood"
+            android:title="혈중알코올 측정" />
+        <item
+            android:id="@+id/Liquor_Store_Menu_Button"
+            android:icon="@drawable/icon_menu_store"
+            android:title="술 저장고" />
+        <item
+            android:id="@+id/Drink_Average_Menu_Button"
+            android:icon="@drawable/icon_menu_statement"
+            android:title="음주 통계" />
+    </group>
+
+    <item android:title="                  부가 기능">
+        <menu>
+            <item
+                android:id="@+id/kakao_Link_Nav"
+                android:icon="@drawable/icon_menu_kakao"
+                android:title="카카오톡에 화면 공유" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/icon_menu_camera"
+                android:title="갤러리에 사진 기록" />
+        </menu>
+    </item>
+
+</menu>
